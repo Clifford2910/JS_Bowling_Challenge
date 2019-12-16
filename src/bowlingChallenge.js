@@ -29,7 +29,7 @@ BowlingGame.prototype.score = function () {
   return totalScore
 
   function isStrike() {
-    return game.rolls[rollIndex] == 10;
+    return game.rolls[rollIndex] === 10;
   }
   function strikeScore() {
     return game.rolls[rollIndex] + game.rolls[rollIndex + 1] + game.rolls[rollIndex + 2];
