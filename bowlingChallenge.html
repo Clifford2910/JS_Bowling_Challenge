@@ -1,89 +1,92 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Bowling scorecard</title>
-</head>
-
-<body>
-
-  <script>
-  </script>
-
-  <h1>Bowling scorecard!</h1>
-  <h2>Enter the result from your rolls</h2>
-
-  <div>
-    <form>
-      <table>
-        <tr>
-          <th>Frame</th>
-          <th>Roll 1</th>
-          <th>Roll 2</th>
-          <th>Roll 3: 10th frame bonus</th>
-        </tr>
-        <br>
-        <tr>
-          <td>1</td>
-          <td><input id="frame1roll1" type="number" min="0" max="10"></input></td>
-          <td><input id="frame1roll2" type="number" min="0" max="10"></input></td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td><input id="frame2roll1" type="number" min="0" max="10"></input></td>
-          <td><input id="frame2roll2" type="number" min="0" max="10"></input></td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td><input id="frame3roll1" type="number" min="0" max="10"></input></td>
-          <td><input id="frame3roll2" type="number" min="0" max="10"></input></td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td><input id="frame4roll1" type="number" min="0" max="10"></input></td>
-          <td><input id="frame4roll2" type="number" min="0" max="10"></input></td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td><input id="frame5roll1" type="number" min="0" max="10"></input></td>
-          <td><input id="frame5roll2" type="number" min="0" max="10"></input></td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td><input id="frame6roll1" type="number" min="0" max="10"></input></td>
-          <td><input id="frame6roll2" type="number" min="0" max="10"></input></td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td><input id="frame7roll1" type="number" min="0" max="10"></input></td>
-          <td><input id="frame7roll2" type="number" min="0" max="10"></input></td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td><input id="frame8roll1" type="number" min="0" max="10"></input></td>
-          <td><input id="frame8roll2" type="number" min="0" max="10"></input></td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td><input id="frame9roll1" type="number" min="0" max="10"></input></td>
-          <td><input id="frame9roll2" type="number" min="0" max="10"></input></td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td><input id="frame10roll1" type="number" min="0" max="10"></input></td>
-          <td><input id="frame10roll2" type="number" min="0" max="10"></input></td>
-          <td><input id="frame10roll3" type="number" min="0" max="10"></input></td>
-        </tr>
-      </table>
-    </form>
-    <br>
-    <button id="button">Submit</button>
-    <br>
-    <h1>Your score is: <span id="result"></span><h1>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="interface.js"></script>
-    <script src="src/bowlingChallenge.js"></script>
+  <head>
+    <title>Bowling Scoresheet</title>
     <link rel="stylesheet" type="text/css" href="styleSheet.css">
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js'></script>
+    <script src="src/bowlingChallenge.js"></script>
+    <script src="interface.js"></script>
+  </head>
+
+  <body>
+
+  <div id='title' class='title'><h1>Bowling ScoreSheet</h1></div>
+
+  <div id='scoresheet'>
+    <table id='scoresheetTable' class='scoresheet' cellpadding='1' cellspacing='0'>
+      <tr>
+        <th colspan='6'>Frame 1</th>
+        <th colspan='6'>Frame 2</th>
+        <th colspan='6'>Frame 3</th>
+        <th colspan='6'>Frame 4</th>
+        <th colspan='6'>Frame 5</th>
+        <th colspan='6'>Frame 6</th>
+        <th colspan='6'>Frame 7</th>
+        <th colspan='6'>Frame 8</th>
+        <th colspan='6'>Frame 9</th>
+        <th colspan='9'>Frame 10</th>
+      </tr>
+      <tr>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td>
+        <td colspan='3'></td><td colspan='3'></td><td colspan='3'></td>
+      </tr>
+      <tr>
+        <td colspan='6'>
+          <input id="frame1roll1" type="number" min="0" max="10">
+          <input id="frame1roll2" type="number" min="0" max="10">
+        </td>
+        <td colspan='6'>
+          <input id="frame2roll1" type="number" min="0" max="10">
+          <input id="frame2roll2" type="number" min="0" max="10">
+        </td>
+        <td colspan='6'>
+          <input id="frame3roll1" type="number" min="0" max="10">
+          <input id="frame3roll2" type="number" min="0" max="10">
+        </td>
+        <td colspan='6'>
+          <input id="frame4roll1" type="number" min="0" max="10">
+          <input id="frame4roll2" type="number" min="0" max="10">
+        </td>
+        <td colspan='6'>
+          <input id="frame5roll1" type="number" min="0" max="10">
+          <input id="frame5roll2" type="number" min="0" max="10">
+        </td>
+        <td colspan='6'>
+          <input id="frame6roll1" type="number" min="0" max="10">
+          <input id="frame6roll2" type="number" min="0" max="10">
+        </td>
+        <td colspan='6'>
+          <input id="frame7roll1" type="number" min="0" max="10">
+          <input id="frame7roll2" type="number" min="0" max="10">
+        </td>
+        <td colspan='6'>
+          <input id="frame8roll1" type="number" min="0" max="10">
+          <input id="frame8roll2" type="number" min="0" max="10">
+        </td>
+        <td colspan='6'>
+          <input id="frame9roll1" type="number" min="0" max="10">
+          <input id="frame9roll2" type="number" min="0" max="10">
+        </td>
+        <td colspan='9'>
+          <input id="frame10roll1" type="number" min="0" max="10">
+          <input id="frame10roll2" type="number" min="0" max="10">
+          <input id="frame10roll3" type="number" min="0" max="10">
+        </td>
+      </tr>
+    </table>
+
+    <div id='buttons' class='buttons'><button id="button">Submit</button></div>
+
+    <div id='title' class='title'><h1>Your Score is: <span id="result"></span><h1></div>
+  </div>
+
   </body>
-  </html>
+
+</html>
