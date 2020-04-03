@@ -1,5 +1,5 @@
 
-Bowling Scorecard
+# Bowling Scorecard
 
 ## The Task
 
@@ -44,7 +44,17 @@ $ cd bowling_scorecard.js
 $ open bowlingScorecard.html
 ```
 
-This will launch the bowling scorecard frontend in the browser
+This will launch the bowling scorecard frontend in the browser.
+
+## Testing with Jasmine
+
+In the terminal run:
+
+```shell
+$ open SpecRunner.html
+```
+
+This runs the jasmine test suite in the browser.
 
 ## Usage
 
@@ -55,4 +65,8 @@ This will launch the bowling scorecard frontend in the browser
 
 ## Image of App
 
+* On load:
 <img src="images/bowlingapp.png" />
+
+* After use:
+<img src="images/bowlingapp300.png" />
